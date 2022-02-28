@@ -1,16 +1,16 @@
-# polkadot_npm
+# polkadot_api
 This package allow user to create wallet, check balance, transaction, encoding and decoding in polkadot blockchain
 
 Polkadot is a next-generation blockchain protocol connecting multiple specialized blockchains into one unified network. Designed as part of a broad vision for a web that returns control to individuals over internet monopolies, Polkadot builds on the revolutionary promise of previous blockchain networks while offering several fundamental advantages.
 
 ```sh 
-npm  install polkadot_npm 
+npm  install polkadot_api
 ```
 
 Connect to the polkadot blockchain
 
 ```sh
-const {connect } = require("polkadot_npm")
+const {connect } = require("polkadot_api")
 
 const connection=async()=>{
 
@@ -24,7 +24,7 @@ const connection=async()=>{
 Create Account on Polkadot with polkadot address which start with 1
 
 ```sh
-const {getPolkaAddress } = require("polkadot_npm")
+const {getPolkaAddress } = require("polkadot_api")
 
 const createAccount=async()=>{
 
@@ -40,7 +40,7 @@ const createAccount=async()=>{
 Create Account on Polkadot with Kusama address which start with C, D, E, F capital letters
 
 ```sh
-const {getKusamaAddress } = require("polkadot_npm")
+const {getKusamaAddress } = require("polkadot_api")
 
 const createAccount=async()=>{
 
@@ -56,7 +56,7 @@ const createAccount=async()=>{
 Create Account on Polkadot with generic address which start with 5
 
 ```sh
-const {generateGenericAddress } = require("polkadot_npm")
+const {generateGenericAddress } = require("polkadot_api")
 
 const createAccount=async()=>{
 
@@ -72,7 +72,7 @@ Generate account details with seed
 
 ```sh
 
-const {importPrivateKey } = require("polkadot_npm")
+const {importPrivateKey } = require("polkadot_api")
 
 const importAccount=async()=>{
 
@@ -90,7 +90,7 @@ Get wallet Balance
 
 ```sh
 
-const {getBalance } = require("polkadot_npm")
+const {getBalance } = require("polkadot_api")
 
 const getAccountBalance=async()=>{
 
@@ -107,7 +107,7 @@ Decode address
 
 ```sh
 
-const {decryption } = require("polkadot_npm")
+const {decryption } = require("polkadot_api")
 
 const decode=async()=>{
 
@@ -124,7 +124,7 @@ Encode address
 
 ```sh
 
-const {encryption } = require("polkadot_npm")
+const {encryption } = require("polkadot_api")
 
 const encode=async()=>{
 
@@ -146,7 +146,7 @@ Transfer balance
 
 ```sh
 
-const {createPolkaTrx } = require("polkadot_npm")
+const {createPolkaTrx } = require("polkadot_api")
 
 const transaction=async()=>{
 
